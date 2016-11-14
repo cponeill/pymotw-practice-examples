@@ -1,0 +1,8 @@
+# differ.py
+
+import difflib
+from data import *
+
+d = difflib.Differ()
+diff = d.compare(text1_lines, text2_lines)
+print('\n'.join(diff))
