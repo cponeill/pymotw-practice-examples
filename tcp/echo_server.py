@@ -23,15 +23,15 @@ while True:
         
         # Receive the data in small chunks and retransmit it
         while True:
-            data = connection.recv(16)
+            data = connect.recv(16)
             print('received {!r}'.format(data))
             if data:
                 print('sending data back to the client')
-                connection.sendall(data)
+                connect.sendall(data)
             else:
                 print('no data from', client_address)
                 break
 
     finally:
         # Clean up the connection
-        connection.close()
+        connect.close()
