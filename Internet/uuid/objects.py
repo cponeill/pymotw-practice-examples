@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # objects.py
-
 import uuid
 
 def show(msg, l):
@@ -22,3 +21,5 @@ show('converted to uuids', uuids)
 
 uuids.sort()
 show('sorted', uuids)
+
+print(hex(uuid.getnode()))
