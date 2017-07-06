@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # init.py
+# tbis is the collections library
 
 import collections
 
